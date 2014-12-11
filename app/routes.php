@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'HomeController@indexAction');
+Route::get('/test', 'HomeController@testAction');
+Route::post('/upload', 'HomeController@uploadAction');
