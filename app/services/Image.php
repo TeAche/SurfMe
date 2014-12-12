@@ -121,9 +121,9 @@ class Image {
 
             // Get file info and try to move
             $destination = Config::get('image.upload_path') . $dir;
-            $filename    = $file-&gt;\getClientOriginalName();
+            $filename    = $file->getClientOriginalName();
         $path        = Config::get('image.upload_dir') . '/' . $dir . '/' . $filename;
-        $uploaded    = $file-&gt;move($destination, $filename);
+        $uploaded    = $file->move($destination, $filename);
 
         if ($uploaded)
         {
