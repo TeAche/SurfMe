@@ -23,3 +23,41 @@ Documentation for the entire framework can be found on the [Laravel website](htt
 ### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+
+## Surfme Issues
+
+1. Imagine image manipulation library in order to get it working you need to install imagick to your vm
+
+## ssh to your vagrant
+vagrant ssh
+
+## update your applications
+sudo apt-get update
+
+## install imagemagick
+sudo apt-get install imagemagick
+
+## install php5-imagick
+sudo apt-get install php5-imagick
+
+## restart your php5-fpm service
+sudo service php5-fpm restart
+
+2. Phpmyadmin is not installed by default for the Homestead vm
+
+## ssh to your vagrant
+vagrant ssh
+
+## install phpmyadmin
+sudo apt-get install phpmyadmin
+
+## create a symbol link to dir
+sudo ln -s /usr/share/phpmyadmin/ /usr/share/nginx/html/phpmyadmin
+
+## serve the phpmyadmin.app to the specified dir
+serve phpmyadmin.app /usr/share/nginx/html/phpmyadmin
+
+## in your local machine edit your /etc/hosts -
+add 127.0.0.1 phpmyadmin.app in order to allow access from your browser
+
