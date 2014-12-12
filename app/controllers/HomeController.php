@@ -20,9 +20,9 @@ class HomeController extends BaseController {
 		return View::make('home/index');
 	}
 
-    public function testAction()
+    public function imageAction()
     {
-        return View::make('home/test');
+        return View::make('home/image');
     }
 
     public function uploadAction()

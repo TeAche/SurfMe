@@ -2,23 +2,23 @@
 <!-- Switch Section -->
 <div class="switch-section">
     <p class="switch-section-cont">
-        <a href="{{ URL::route("front/index") }}" class="section-home {{ (Route::getCurrentRoute()->getPath() == "/") ? "active" : "" }}">
-        <span class="icon-home"></span>
+        <a href="{{ URL::route('index') }}" class="section-home">
+            <span class="icon-home"></span>
         </a>
-        <a href="{{ URL::route('doctor/index') }}" class="section-about {{ (Route::getCurrentRoute()->getPath() == "doctor/index") ? "active" : "" }}">
-        <span class="icon-smile"></span>
+        <a href="#" class="section-about">
+            <span class="icon-smile"></span>
         </a>
-        <a href="{{ URL::route('product/index') }}" class="section-services  {{ (Route::getCurrentRoute()->getPath() == "product") ? "active" : "" }}">
-        <span class="icon-th-list"></span>
+        <a href="#" class="section-services">
+            <span class="icon-cog"></span>
         </a>
-        <a href="#" class="section-folio {{ (Route::getCurrentRoute()->getPath() == "analyse") ? "active" : "" }}">
-        <span class="icon-briefcase"></span>
+        <a href="#" class="section-folio">
+            <span class="icon-briefcase"></span>
         </a>
-        <a href="#" class="section-blog {{ (Route::getCurrentRoute()->getPath() == "user") ? "active" : "" }}">
-        <span class="icon-user"></span>
+        <a href="#" class="{{ URL::route('image') }}">
+            <span class="icon-comments"></span>
         </a>
-        <a href="{{ URL::route("service/index") }}" class="section-contact {{ (Route::getCurrentRoute()->getPath() == "service") ? "active" : "" }}">
-        <span class="icon-cog"></span>
+        <a href="#" class="section-contact">
+            <span class="icon-envelope-alt"></span>
         </a>
     </p>
 </div>

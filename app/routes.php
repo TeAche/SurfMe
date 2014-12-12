@@ -11,6 +11,17 @@
 |
 */
 
-Route::get('/', 'HomeController@indexAction');
-Route::get('/test', 'HomeController@testAction');
-Route::post('/upload', 'HomeController@uploadAction');
+Route::get('/', array(
+    'as'    => 'index',
+    'uses'  => 'HomeController@indexAction'
+));
+
+Route::get('/image', array(
+    'as'    => 'image',
+    'uses'  => 'HomeController@imageAction',
+));
+
+Route::post('/upload', array(
+    'as'    => 'upload',
+    'uses'  => 'HomeController@uploadAction'
+));

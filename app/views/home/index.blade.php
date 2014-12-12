@@ -42,9 +42,9 @@
 </div>
 
 <!-- Pages Navigation -->
-<div id="about" class="section"><a href="about.html">
-        <div class="section-title"><i class="icon-smile"></i><strong>About</strong>
-            <p>some text <span>here</span></p>
+<div id="about" class="section"><a href="#">
+        <div class="section-title"><i class="icon-smile"></i><strong>Image</strong>
+            <p>image <span>upload</span></p>
         </div>
     </a>
 </div>
@@ -59,9 +59,9 @@
             <p>some text <span>here</span></p>
         </div>
     </a></div>
-<div id="blog" class="section"><a href="blog.html">
-        <div class="section-title"><i class="icon-comments"></i><strong>Blog</strong>
-            <p>some text <span>here</span></p>
+<div id="blog" class="section"><a href="{{ URL::route('image') }}">
+        <div class="section-title"><i class="icon-comments"></i><strong>Image</strong>
+            <p>image <span>upload</span></p>
         </div>
     </a>
 </div>
