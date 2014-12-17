@@ -42,32 +42,32 @@
 </div>
 
 <!-- Pages Navigation -->
-<div id="about" class="section"><a href="#">
-        <div class="section-title"><i class="icon-smile"></i><strong>Image</strong>
-            <p>image <span>upload</span></p>
+<div id="about" class="section"><a href="{{ URL::route('profile') }}">
+        <div class="section-title"><i class="icon-smile"></i><strong>Profile</strong>
+            <p>My <span>surfes</span></p>
         </div>
     </a>
 </div>
-<div id="services" class="section"><a href="services.html">
-        <div class="section-title"><i class="icon-cog"></i><strong>Services</strong>
-            <p>some text <span>here</span></p>
+<div id="services" class="section"><a href="{{ URL::route('manage') }}">
+        <div class="section-title"><i class="icon-cog"></i><strong>Manage</strong>
+            <p>manage <span>here</span></p>
         </div>
     </a>
 </div>
-<div id="folio" class="section"><a href="folio.html">
-        <div class="section-title"><i class="icon-briefcase"></i><strong>folio</strong>
-            <p>some text <span>here</span></p>
+<div id="folio" class="section"><a href="{{ URL::route('surfme') }}">
+        <div class="section-title"><i class="icon-briefcase"></i><strong>Surfme</strong>
+            <p>surf <span>here</span></p>
         </div>
     </a></div>
-<div id="blog" class="section"><a href="{{ URL::route('image') }}">
-        <div class="section-title"><i class="icon-comments"></i><strong>Image</strong>
-            <p>image <span>upload</span></p>
+<div id="blog" class="section"><a href="{{ URL::route('blog') }}">
+        <div class="section-title"><i class="icon-comments"></i><strong>Blog</strong>
+            <p>news, <span>follow up</span></p>
         </div>
     </a>
 </div>
-<div id="contact" class="section"><a href="contact.html">
-        <div class="section-title"><i class="icon-envelope-alt"></i><strong>Contact</strong>
-            <p>some text <span>here</span></p>
+<div id="contact" class="section"><a href="{{ URL::route('register') }}">
+        <div class="section-title"><i class="icon-envelope-alt"></i><strong>Register</strong>
+            <p>region <span>settings</span></p>
         </div>
     </a>
 </div>

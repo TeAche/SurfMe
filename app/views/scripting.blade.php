@@ -10,5 +10,4 @@
     <script type="text/javascript" src="{{ URL::asset("js/jquery.fancybox.min.js") }}"></script>
     <script type="text/javascript" src="{{ URL::asset("js/jquery.nicescroll.min.js") }}"></script>
     <script type="text/javascript" src="{{ URL::asset("js/functions.js") }}"></script>
-    <script type="text/javascript" src="{{ URL::asset("js/tabs.js") }}"></script>
 @show

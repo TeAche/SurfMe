@@ -20,14 +20,39 @@ class HomeController extends BaseController {
 		return View::make('home/index');
 	}
 
-    public function imageAction()
+    public function profileAction()
     {
-        return View::make('home/image');
+        return View::make('home/profile');
+    }
+
+    public function manageAction()
+    {
+        return View::make('home/manage');
+    }
+
+    public function surfmeAction()
+    {
+        return View::make('home/surfme');
+    }
+
+    public function blogAction()
+    {
+        return View::make('home/blog');
+    }
+
+    public function registerAction()
+    {
+        return View::make('home/register');
     }
 
     public function uploadAction()
     {
         Image::upload(Input::file('image'), 'articles/', true);
         return View::make('home/index');
+    }
+
+    public function testAction()
+    {
+        return View::make('test');
     }
 }

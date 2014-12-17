@@ -46,7 +46,7 @@ $(document).ready(function () {
     slide_speed: 800,
     play: 4000,
     pagination: true,
-    hashchange: true,
+    hashchange: false,
     scrollable: true
   });
 

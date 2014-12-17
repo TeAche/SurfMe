@@ -10,6 +10,12 @@
   <div class="container">
     <hr />
     <h1 class="main-title"><span>Top Stories</span> Blog</h1>
+
+          {{ Form::open(array('url' => '/upload', 'files' => true)) }}
+          {{ Form::file('image') }}
+          {{ Form::submit('Upload') }}
+          {{ Form::close() }}
+
     <p class="lead">Lorem ipsum dolor sit amet, <span>consectetuer</span> adipiscing elit.<br />
       Sed diam <span>nonummy nibh</span> euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 
@@ -123,11 +129,5 @@
       <a class="btn btn-large">Get a Quote</a></div>
   </div>
 </div>
-
 @include('switch')
-
-{{ Form::open(array('url' => '/upload', 'files' => true)) }}
-{{ Form::file('image') }}
-{{ Form::submit('Go') }}
-{{ Form::close() }}
 @stop

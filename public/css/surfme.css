@@ -1,0 +1,9 @@
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    cursor: pointer;
+}
